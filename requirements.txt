@@ -1,4 +1,12 @@
 Flask==0.9
 Jinja2==2.6
 Werkzeug==0.8.3
+argparse==1.2.1
+backports.ssl-match-hostname==3.4.0.2
 gunicorn==0.17.2
+pushbullet.py==0.8.1
+python-magic==0.4.6
+requests==2.6.0
+six==1.9.0
+websocket-client==0.26.0
+wsgiref==0.1.2
