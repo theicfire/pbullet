@@ -11,7 +11,7 @@ def hello():
 
 @app.route('/send', methods=['POST'])
 def send():
-    if request.form['phone_nickname']:
+    if 'phone_nickname' in request.form:
         bike = next(x for x in pb.devices if x.nickname == request.form['phone_nickname'])
         print 'special', bike
         return jsonify(**bike.push_note(request.form['title'], request.form['message']))
